@@ -1,8 +1,28 @@
 vim9script
 
-filetype plugin indent on
-syntax on
+if &compatible | set nocompatible | endif
+silent! while 0
+  set nocompatible silent!
+endwhile
 
+set encoding=utf-8 fileencoding=utf-8 fileformats=unix,dos
+scriptencoding utf-8
+
+# vint: -ProhibitAutocmdWithNoGroup
+exe 'augroup vimrc'
+autocmd!
+
+const is_win = has('win32')
+$v = $HOME .. (is_win ? '\vimfiles' : '/.vim')
+$VIMRC = $v .. '/vimrc'
+
+def Source(file: string)
+  execute $'source $v/{file}.vim'
+enddef
+
+setglobal pastetoggle=<F2>
+
+# habamax
 set hidden confirm
 set autoindent shiftwidth=4 softtabstop=-1 expandtab
 set ttimeout ttimeoutlen=25
@@ -43,3 +63,9 @@ if !isdirectory(&directory) | mkdir(&directory, "p") | endif
 
 set backup
 set undofile
+
+# Load plugins
+Source('pack/packs')
+
+# vint: -ProhibitAutocmdWithNoGroup
+exe 'augroup END'
