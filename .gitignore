@@ -12,3 +12,11 @@
 *.temp
 /tags
 /pack/ext/
+.DS_Store
+*.swp
+*.zwc
+vim/.vim/.netrwhist
+
+
+
+
