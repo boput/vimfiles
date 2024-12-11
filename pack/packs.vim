@@ -10,7 +10,7 @@ if !isdirectory(minpac_dir)
   silent! execute printf('!git clone https://github.com/boput/minpac.git %s', minpac_dir)
 endif
 # Insstall bennyyip plugpac usign powershell (if cmd.exe then replace $env:USERPROFILE s %userprofile%
-# curl -fLo $env:USERPROFILE\vimfiles/autoload/plugpac.vim --create-dirs https://raw.githubusercontent.com/boput/plugpac.vim/master/plugpac.vim
+# curl -fLo $env:USERPROFILE\vimfiles\autoload\plugpac.vim --create-dirs https://raw.githubusercontent.com/boput/plugpac.vim/master/plugpac.vim
 
 g:plugpac_plugin_conf_path = $v .. '/rc'
 g:plugpac_default_type = 'delay'
