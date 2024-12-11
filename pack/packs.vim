@@ -42,7 +42,7 @@ Pack 'tpope/vim-abolish'
 Pack 'tpope/vim-repeat'
 # Pack 'tpope/vim-rsi'
 Pack 'tpope/vim-scriptease'
-# Pack 'tpope/vim-sensible', {'type': 'start'} # bumped under /after/plugin
+Pack 'tpope/vim-sensible', {'type': 'start'}
 # Pack 'tpope/vim-surround', {'type': 'delay'}
 # Pack 'tpope/vim-unimpaired'
 
