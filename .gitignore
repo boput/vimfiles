@@ -1,21 +1,25 @@
+.DS_Store
+.netrwbook
+.netrwhist
+*.html
+*.pyc
+*.swp
+*.temp
+*.zwc
+**/tags
 /.data/
 /pack/bundle/
-/pack/lang/
-/pack/habamax/
-/pack/vim/
 /pack/colors/
-pack/minpac/*
-**/tags
-.netrwbook
-*.html
-.netrwhist
-*.pyc
-*.temp
-/tags
 /pack/ext/
-.DS_Store
-*.swp
-*.zwc
+/pack/habamax/
+/pack/lang/
+/pack/vim/
+/tags
+\pack\**
+\pack\colors\
+pack/** */
+pack\minpac\**
+pack/minpac/** */
 vim/.vim/.netrwhist
 
 
