@@ -4,7 +4,7 @@
 /pack/habamax/
 /pack/vim/
 /pack/colors/
-/pack/minpac/
+pack/minpac/
 **/tags
 .netrwbook
 *.html
