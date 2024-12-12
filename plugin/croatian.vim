@@ -7,7 +7,7 @@ language messages C.UTF-8
 #   set langremap
 #  endif
 
-# # Keymap внутренняя раскладка + langmap (который надо использовать по минимуму)
+# Keymap + langmap (minimum required)
 # if has('osx')
 #      set keymap=croatian_utf-8
 #      set langmap=qwertzuiopšđž;qwertyuiop[]\\;
@@ -17,7 +17,7 @@ language messages C.UTF-8
 #      set langmap+=ASDFGHJKLČĆ;ASDFGHJKL:"
 #      set langmap+=YXCVBNM;ZXCVBNM
 #      set langmap+=№#
-#      # set langmap+=./
+       set langmap+=./
 # else
 #      # windows builds lack all vim keymaps
 #      set keymap=croatian_utf-8
