@@ -4,7 +4,7 @@
 /pack/habamax/
 /pack/vim/
 /pack/colors/
-/pack/minpac/
+/pack/minpac/*
 .netrwbook
 .netrwhist
 *.html
@@ -13,5 +13,6 @@
 *.temp
 *.zwc
 **/tags
+local.vim
 
 .DS_Store
