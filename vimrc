@@ -5,6 +5,10 @@ silent! while 0
   set nocompatible silent!
 endwhile
 
+language en_US.UTF8
+set langmenu=en_US
+$LANG = 'en_US'
+
 set encoding=utf-8 fileencoding=utf-8 fileformats=unix,dos
 scriptencoding utf-8
 
