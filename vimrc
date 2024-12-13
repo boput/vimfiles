@@ -63,7 +63,7 @@ endif
 &directory = $'{$MYVIMDIR}/data/swap/'
 &backupdir = $'{$MYVIMDIR}/data/backup//'
 &undodir = $'{$MYVIMDIR}/data/undo//'
-&viminfofile = $'{$MYVIMDIR}/.data/info/viminfo'
+&viminfofile = $'{$MYVIMDIR}/data/info/viminfo'
 if !isdirectory(&undodir)   | mkdir(&undodir, "p")   | endif
 if !isdirectory(&backupdir) | mkdir(&backupdir, "p") | endif
 if !isdirectory(&directory) | mkdir(&directory, "p") | endif
