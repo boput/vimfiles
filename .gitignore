@@ -7,10 +7,9 @@ pack/minpac/opt/*
 
 pack/minpac/start/*
 
+!pack/packs.vim
 !pack/minpac/start/vim-sensible
 !pack/minpac/start/vimcomplete
-
-pack/packs.vim
 
 # habamax
 pack/bundle/
