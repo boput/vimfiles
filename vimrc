@@ -1,5 +1,6 @@
 vim9script
 
+# boput changes ======
 if &compatible | set nocompatible | endif
 silent! while 0
   set nocompatible silent!
@@ -25,6 +26,7 @@ def Source(file: string)
 enddef
 
 setglobal pastetoggle=<F2>
+# =====
 
 # habamax
 set hidden confirm
@@ -61,12 +63,17 @@ endif
 &directory = $'{$MYVIMDIR}/.data/swap/'
 &backupdir = $'{$MYVIMDIR}/.data/backup//'
 &undodir = $'{$MYVIMDIR}/.data/undo//'
+&viminfofile = $'{$MYVIMDIR}/.data/info/viminfo'
 if !isdirectory(&undodir)   | mkdir(&undodir, "p")   | endif
 if !isdirectory(&backupdir) | mkdir(&backupdir, "p") | endif
 if !isdirectory(&directory) | mkdir(&directory, "p") | endif
 
 set backup
 set undofile
+
+# boput changes =====
+# Not needed packages
+Source('local')
 
 # Load plugins
 Source('pack/packs')

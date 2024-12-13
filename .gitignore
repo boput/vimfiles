@@ -1,10 +1,15 @@
 /.data/
+.data/
 /pack/bundle/
+pack/bundle/
 /pack/lang/
 /pack/habamax/
 /pack/vim/
 /pack/colors/
-/pack/minpac/*
+/pack/minpac/
+pack/minpac/*
+**/pack/
+pack
 .netrwbook
 .netrwhist
 *.html
@@ -16,3 +21,5 @@
 local.vim
 
 .DS_Store
+pack/minpac/start/vimcomplete
+pack/packs.vim

@@ -7,7 +7,7 @@ autocmd!
 # Install k-takata minmpac if does not exist
 const minpac_dir = $v .. '/pack/minpac/opt/minpac'
 if !isdirectory(minpac_dir)
-  silent! execute printf('!git clone https://github.com/boput/minpac.git %s', minpac_dir)
+  silent! execute printf('!git clone https://github.com//minpac.git %s', minpac_dir)
 endif
 # Insstall bennyyip plugpac usign powershell (if cmd.exe then replace $env:USERPROFILE s %userprofile%
 # curl -fLo $env:USERPROFILE\vimfiles\autoload\plugpac.vim --create-dirs https://raw.githubusercontent.com/boput/plugpac.vim/master/plugpac.vim
