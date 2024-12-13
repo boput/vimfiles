@@ -1,15 +1,24 @@
-/.data/
-.data/
-/pack/bundle/
+
+data/*
+
+# from bennyyip
+pack/minpac/opt/*
+!pack/minpac/opt/minpac
+
+pack/minpac/start/*
+
+!pack/minpac/start/vim-sensible
+!pack/minpac/start/vimcomplete
+
+pack/packs.vim
+
+# habamax
 pack/bundle/
-/pack/lang/
-/pack/habamax/
-/pack/vim/
-/pack/colors/
-/pack/minpac/
-pack/minpac/*
-**/pack/
-pack
+pack/lang/
+pack/habamax/
+pack/vim/
+pack/colors/
+
 .netrwbook
 .netrwhist
 *.html
@@ -21,5 +30,4 @@ pack
 local.vim
 
 .DS_Store
-pack/minpac/start/vimcomplete
-pack/packs.vim
+
