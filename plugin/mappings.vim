@@ -18,8 +18,8 @@ xnoremap <silent> <expr> <space>v SourceVim()
 nnoremap <silent> <expr> <space>vv SourceVim() .. '_'
 
 # split keyboard has no Space on left part, use Enter
-map <CR> <space>
-map <CR><CR> <space><space>
+# map <CR> <space>
+# map <CR><CR> <space><space>
 
 # fuzzy
 import autoload 'fuzzy.vim'
@@ -244,17 +244,6 @@ nnoremap <silent> <space>gb <scriptcmd>git.Blame()<CR>
 xnoremap <silent> <space>gb <scriptcmd>git.Blame(line("v"), line("."))<CR>
 nnoremap <silent> <space>gh <scriptcmd>git.GithubOpen()<CR>
 xnoremap <silent> <space>gh <scriptcmd>git.GithubOpen(line("v"), line("."))<CR>
-
-import autoload 'buf.vim'
-nnoremap go <nop>
-# go to journal file
-nnoremap <silent> goj <scriptcmd>buf.EditInTab($"{expand($DOCS ?? '~/docs')}/journal/2024.rst")<CR>
-# go to todo file
-nnoremap <silent> got <scriptcmd>buf.EditInTab($"{expand($DOCS ?? '~/docs')}/todo.rst")<CR>
-# go to work todo file
-nnoremap <silent> gow <scriptcmd>buf.EditInTab($"{expand($DOCS ?? '~/docs')}/todo-w.rst")<CR>
-# go to *** file
-nnoremap <silent> gop <scriptcmd>buf.EditInTab($"{expand($DOCS ?? '~/docs')}/habamax.rst")<CR>
 
 import autoload 'os.vim'
 # go to current file in os file manager

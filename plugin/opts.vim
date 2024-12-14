@@ -62,10 +62,6 @@ g:markdown_fenced_languages = ['python', 'go']
 # vim-closetag
 g:closetag_filetypes = 'html,xhtml,xml'
 
-# elixir
-g:elixir_mix_test_position = "bottom"
-g:mix_format_on_save = 1
-
 # Colorizer
 g:colorizer_auto_filetype = 'css,html,colortemplate'
 g:colorizer_disable_bufleave = 1
@@ -106,16 +102,6 @@ nmap dss <Plug>(sandwich-delete-auto)
 nmap cs <Plug>(sandwich-replace)
 nmap css <Plug>(sandwich-replace-auto)
 xmap S <Plug>(sandwich-add)
-
-# godot, assuming it is installed as flatpak
-if !executable('godot') && executable('flatpak')
-    g:godot_executable = "flatpak run org.godotengine.Godot"
-endif
-
-# tex
-g:tex_flavor = "latex"
-g:tex_no_error = 1
-g:tex_fast = "pbv"
 
 # vim-ii
 g:ii_filter_rx = ['-!-.*has joined', '-!-.*has left']

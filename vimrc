@@ -13,10 +13,6 @@ $LANG = 'en_US'
 set encoding=utf-8 fileencoding=utf-8 fileformats=unix,dos
 scriptencoding utf-8
 
-# vint: -ProhibitAutocmdWithNoGroup
-exe 'augroup vimrc'
-autocmd!
-
 const is_win = has('win32')
 $v = $HOME .. (is_win ? '\vimfiles' : '/.vim')
 $VIMRC = $v .. '/vimrc'
@@ -49,7 +45,7 @@ set nostartofline
 set fileformat=unix fileformats=unix,dos
 set sidescroll=1 sidescrolloff=3
 set nrformats=bin,hex,unsigned
-set nospell spelllang=en,ru
+set nospell spelllang=en,hr
 set diffopt+=vertical,algorithm:histogram,indent-heuristic
 set sessionoptions=buffers,curdir,tabpages,winsize
 set viminfo='200,<500,s32
@@ -77,6 +73,4 @@ Source('local')
 
 # Load plugins
 Source('pack/packs')
-
-# vint: -ProhibitAutocmdWithNoGroup
-exe 'augroup END'
+# =====
