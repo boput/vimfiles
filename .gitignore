@@ -1,22 +1,22 @@
 
-data/*
+/data/
 
 # from bennyyip
-pack/minpac/opt/*
-!pack/minpac/opt/minpac
+# !pack/packs.vim
+# pack/minpac/opt/
+# !pack/minpac/opt/minpac
+# !pack/minpac/start/vimcomplete
+/pack/minpac/start
+# !/pack/minpac/start/vim-sensible
 
-pack/minpac/start/*
 
-!pack/packs.vim
-!pack/minpac/start/vim-sensible
-!pack/minpac/start/vimcomplete
 
 # habamax
-pack/bundle/
-pack/lang/
-pack/habamax/
-pack/vim/
-pack/colors/
+/pack/bundle/
+/pack/lang/
+/pack/habamax/
+/pack/vim/
+/pack/colors/
 
 .netrwbook
 .netrwhist

@@ -4,13 +4,19 @@ vim9script
 exe 'augroup au_packs'
 autocmd!
 
-# Install k-takata minmpac if does not exist
+# Install k-takata minmpac if does not exist.
 const minpac_dir = $v .. '/pack/minpac/opt/minpac'
 if !isdirectory(minpac_dir)
+  echo 'Installing minpac...'
+  echo ''
   silent! execute printf('!git clone https://github.com//minpac.git %s', minpac_dir)
 endif
-# Insstall bennyyip plugpac usign powershell (if cmd.exe then replace $env:USERPROFILE s %userprofile%
-# curl -fLo $env:USERPROFILE\vimfiles\autoload\plugpac.vim --create-dirs https://raw.githubusercontent.com/boput/plugpac.vim/master/plugpac.vim
+# Install bennyyip plugpac if does not exist.
+if !filereadable(expand('$MYVIMDIR/autoload/plugpac.vim'))
+  echo 'Installing plugpac...'
+  echo ''
+  silent !\curl -fLo .\vimfiles\autoload\plugac.vim --create-dirs https://raw.githubusercontent.com/bennyyip/plugpac.vim/master/plugpac.vim
+endif
 
 g:plugpac_plugin_conf_path = $v .. '/rc'
 g:plugpac_default_type = 'delay'
@@ -39,7 +45,7 @@ Pack 'tpope/vim-fugitive'
 Pack 'tpope/vim-abolish'
 # Pack 'tpope/vim-endwise'
 # Pack 'tpope/vim-characterize'
-Pack 'tpope/vim-repeat'
+# Pack 'tpope/vim-repeat'
 # Pack 'tpope/vim-rsi'
 Pack 'tpope/vim-scriptease'
 Pack 'tpope/vim-sensible', {'type': 'start'}
