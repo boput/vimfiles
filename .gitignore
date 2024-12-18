@@ -1,13 +1,8 @@
 
 /data/
 
-# from bennyyip
-# !pack/packs.vim
-# pack/minpac/opt/
-# !pack/minpac/opt/minpac
-# !pack/minpac/start/vimcomplete
-/pack/minpac/start
-# !/pack/minpac/start/vim-sensible
+/pack/minpac/start/
+/pack/minpac/opt/
 
 
 
