@@ -64,7 +64,7 @@ Pack 'habamax/vim-dir'
 Pack 'habamax/vim-gruvbit'
 Pack 'habamax/vim-nod'
 
-Pack 'romainl/vim-qf'
+# Pack 'romainl/vim-qf'
 
 # Pack 'girishji/autosuggest.vim'
 # Need this autocmd to supress message from VimCompleteLoaded
