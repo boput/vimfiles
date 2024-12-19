@@ -58,13 +58,13 @@ Pack 'machakann/vim-sandwich' # vim-sandwich, mimic vim-surround mappings
 
 # Pack 'justinmk/vim-sneak', {'type': 'start'}
 
-Pack 'boput/vim-popot', {'for': ['po, pot']}
+# Pack 'boput/vim-popot', {'for': ['po, pot']}
 
-Pack 'habamax/vim-dir'
+# Pack 'habamax/vim-dir'
 Pack 'habamax/vim-gruvbit'
 Pack 'habamax/vim-nod'
 
-Pack 'romainl/vim-qf'
+# Pack 'romainl/vim-qf'
 
 # Pack 'girishji/autosuggest.vim'
 # Need this autocmd to supress message from VimCompleteLoaded
